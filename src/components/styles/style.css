@@ -206,13 +206,15 @@
   padding: 0.8rem 0;
 }
 .primary-nav a,
-.submenu-toggle {
-  color: var(--text);
+.submenu-toggle,
+.new {   /* „New Product“ დამატებით აქ */
+  color: var(--text);       /* მთავარი ფერი */
   text-decoration: none;
   background: none;
   border: none;
   font: inherit;
-  font-size: 0.95rem;
+  font-size: 0.95rem;       /* ყველა ერთნაირი ზომა */
+  font-weight: 600;          /* ყველა ნავიგაცია bold */
   letter-spacing: 0.8px;
   cursor: pointer;
   padding: 0.25rem;

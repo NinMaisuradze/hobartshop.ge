@@ -1,6 +1,7 @@
 import candle1 from "../components/images/products/candle1.jpg";
 import candle2 from "../components/images/products/candle2.jpg";
 
+
 export const products = [
   {
     id: 1,

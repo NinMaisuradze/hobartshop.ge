@@ -1,5 +1,6 @@
 {
   "header": {
+    "home": "Home",
     "about": "About Us",
     "blog": "Blog",
     "contact": "Contact",
@@ -25,5 +26,22 @@
     "emailLabel": "Email",
     "email": "ninmaisuradze20@gmail.com",
     "backHome": "Back to Home"
-  }
+  },
+  "DecorationCandle": "Decoration Candle",
+  "Holiday Candle": "Holiday Candle",
+  "epoxy Decor": "Epoxy Decor",
+  "accessories": "Accessories",
+  "plaster Decor": "Plaster Decor",
+  "felt Toys": "Felt Toys",
+  "accessibility": "Accessibility",
+  "disableAccessibility": "Disable Accessibility",
+  "productDetail": {
+  "notFound": "Product not found",
+  "backToList": "Back to Decoration Candles",
+  "titleCoupleCandle": "Couple Candle",
+  "description": "This candle is made from 100% soy wax, high-quality fragrances, and handmade decorations. Perfect for gifts or interior decor.",
+  "price": "Price: $4.42",
+  "back": "Back"
+}
+
 }

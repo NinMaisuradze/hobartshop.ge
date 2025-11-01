@@ -24,7 +24,7 @@ export default function DecorationCandle({ lang }) {
             p?.title && (
               <Link
                 key={p.id}
-                to={`/products/decoration-candle/${p.id}`}
+                to={`/products/decoration-candle/${p.id}`} // დეტალურ გვერდზე მიჰყავს
                 className="product-card"
               >
                 <div className="img-wrapper">

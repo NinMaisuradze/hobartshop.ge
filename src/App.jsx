@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { AccessibilityProvider } from "./contexts/AccessibilityContext"; // named import
+import { AccessibilityProvider } from "./contexts/AccessibilityContext";
 import { StoreProvider } from "./contexts/StoreContext";
 
 // Components
@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import SearchResults from "./pages/SearchResults";
 import DecorationCandle from "./components/images/products/DecorationCandle";
+import DecorationCandleDetail from "./components/images/products/DecorationCandleDetail"; // ✅ ახალი დეტალური გვერდი
 import BlogList from "./pages/Blog/BlogList";
 import BlogPost from "./pages/Blog/BlogPost";
 import Cart from "./components/Cart";
@@ -27,7 +28,19 @@ function InnerApp() {
         <Route path="/contact" element={<Contact lang={currentLang} />} />
         <Route path="/about" element={<About lang={currentLang} />} />
         <Route path="/search" element={<SearchResults lang={currentLang} />} />
-        <Route path="/products/decoration-candle" element={<DecorationCandle lang={currentLang} />} />
+        
+        {/* 🕯 დეკორატიული სანთლების სია */}
+        <Route
+          path="/products/decoration-candle"
+          element={<DecorationCandle lang={currentLang} />}
+        />
+        
+        {/* 🕯 კონკრეტული სანთლის დეტალური გვერდი */}
+        <Route
+          path="/products/decoration-candle/:id"
+          element={<DecorationCandleDetail lang={currentLang} />}
+        />
+
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/cart" element={<Cart />} />
@@ -40,11 +53,10 @@ function InnerApp() {
 
 export default function App() {
   return (
-   <AccessibilityProvider>
-  <StoreProvider>
-    <InnerApp />
-  </StoreProvider>
-</AccessibilityProvider>
-
+    <AccessibilityProvider>
+      <StoreProvider>
+        <InnerApp />
+      </StoreProvider>
+    </AccessibilityProvider>
   );
 }

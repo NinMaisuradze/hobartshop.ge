@@ -3,28 +3,23 @@ import { createContext, useState, useEffect } from "react";
 export const AccessibilityContext = createContext(null);
 
 export const AccessibilityProvider = ({ children }) => {
-  const [textSize, setTextSize] = useState(100);
+  const [textSize, setTextSize] = useState(100); // პროცენტებში
   const [highContrast, setHighContrast] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
 
+  // ტექსტის ზომა
   useEffect(() => {
     document.documentElement.style.setProperty("--text-scale", `${textSize}%`);
   }, [textSize]);
 
+  // კონტრასტული რეჟიმი
   useEffect(() => {
     const className = "high-contrast";
     document.documentElement.classList.toggle(className, highContrast);
   }, [highContrast]);
 
-  useEffect(() => {
-    const mediaElements = document.querySelectorAll("audio, video");
-    mediaElements.forEach((el) => (el.muted = isMuted));
-  }, [isMuted]);
-
   const disableAccessibility = () => {
     setTextSize(100);
     setHighContrast(false);
-    setIsMuted(true);
   };
 
   return (
@@ -34,8 +29,6 @@ export const AccessibilityProvider = ({ children }) => {
         setTextSize,
         highContrast,
         setHighContrast,
-        isMuted,
-        setIsMuted,
         disableAccessibility,
       }}
     >
