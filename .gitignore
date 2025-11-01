@@ -1,0 +1,14 @@
+# MacOS
+.DS_Store
+.Trashes
+
+# Node modules
+node_modules/
+
+# IDEs
+.vscode/
+.idea/
+
+# სხვა ზედმეტი ფოლდერები
+Desktop/
+Downloads/
