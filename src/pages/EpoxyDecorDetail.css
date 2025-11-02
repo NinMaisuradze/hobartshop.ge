@@ -5,6 +5,7 @@
   padding: 60px 20px;
   justify-content: center;
   align-items: flex-start;
+  background: #00032c; /* სურვილისამებრ შეგიძლია შეცვალო */
 }
 
 .product-detail-img {
@@ -16,6 +17,11 @@
   width: 100%;
   border-radius: 15px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-detail-img img:hover {
+  transform: scale(1.03);
 }
 
 .product-detail-info {
@@ -26,17 +32,21 @@
 .product-detail-info h1 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: #fffdfd;
 }
 
 .product-detail-info .description {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  color: #fffcfc;
   margin-bottom: 15px;
+  line-height: 1.5;
 }
 
 .product-detail-info .price {
+  font-size: 1.2rem;
   font-weight: 600;
   color: #3c9e8e;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .back-link {
@@ -47,4 +57,17 @@
 
 .back-link:hover {
   text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-detail {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .product-detail-img,
+  .product-detail-info {
+    max-width: 100%;
+  }
 }

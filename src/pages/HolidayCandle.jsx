@@ -1,24 +1,28 @@
 import React from "react";
-import HolidayCandle from "../components/HolidayCandle";
+import { Link } from "react-router-dom";
 import { holidayCandleProducts } from "../data/holidayCandleData";
-import "../components/HolidayCandle.css";
+import "./HolidayCandle.css";
 
-const HolidayCandlePage = () => {
+export default function HolidayCandlePage() {
   return (
-    <div className="holiday-candle-page">
-      <h1>Holiday Candle</h1>
-      <div className="holiday-candle-grid">
-        {holidayCandleProducts.map((product) => (
-          <HolidayCandle
-            key={product.id}
-            name={product.name}
-            price={product.price}
-            image={product.image}
-          />
+    <section className="holiday-candle-section">
+      <h2 className="section-title">სადღესასწაულო სანთლები</h2>
+
+      <div className="products-grid">
+        {holidayCandleProducts.map((p) => (
+          <Link
+            key={p.id}
+            to={`/products/holiday-candle/${p.id}`}
+            className="product-card"
+          >
+            <div className="img-wrapper">
+              <img src={p.image} alt={p.name} />
+            </div>
+            <h3>{p.name}</h3>
+            <p className="price">{p.price}</p>
+          </Link>
         ))}
       </div>
-    </div>
+    </section>
   );
-};
-
-export default HolidayCandlePage;
+}
