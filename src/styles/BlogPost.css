@@ -1,64 +1,118 @@
 .blog-post {
-  max-width: 750px;
-  margin: 50px auto;
-  padding: 30px 25px;
+  max-width: 820px;
+  margin: 80px auto;
+  padding: 50px 40px;
   background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-  line-height: 1.75;
+  border-radius: 28px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.05);
+  line-height: 1.85;
   color: #3a3a3a;
   font-family: 'Helvetica Neue', sans-serif;
+  animation: fadeIn 1.2s ease;
 }
 
+/* სათაური */
 .blog-post h1 {
-  font-size: 28px;
-  margin-bottom: 25px;
+  font-size: 32px;
+  margin-bottom: 30px;
   color: #2c5d50;
   text-align: center;
   font-weight: 500;
   font-family: 'Playfair Display', serif;
+  letter-spacing: 0.4px;
+  position: relative;
 }
 
+.blog-post h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: #a8d5cb;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* მთავარი ფოტო */
 .blog-image {
   width: 100%;
-  border-radius: 16px;
-  margin: 25px 0;
+  border-radius: 22px;
+  margin: 30px 0;
   height: auto;
   object-fit: cover;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-  transition: transform 0.4s ease, filter 0.4s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.6s ease, filter 0.6s ease;
 }
 
 .blog-image:hover {
-  transform: scale(1.02);
-  filter: brightness(102%);
+  transform: scale(1.03);
+  filter: brightness(105%);
 }
 
+/* ტექსტი */
 .blog-text {
-  font-size: 16px;
-  color: #4a4a4a;
+  font-size: 17px;
+  color: #444;
   white-space: pre-wrap;
   text-align: justify;
-  margin-top: 10px;
-  padding: 14px 16px;
-  border-radius: 12px;
-  background: #fcfcfc; /* ძალიან მსუბუქი ნაზი ფონით */
+  margin-top: 20px;
+  padding: 24px 26px;
+  border-radius: 18px;
+  background: #f9fbfa;
+  box-shadow: inset 0 0 12px rgba(0,0,0,0.03);
+  transition: background 0.4s ease;
 }
 
+.blog-text:hover {
+  background: #f7faf9;
+}
+
+/* უკან დაბრუნების ღილაკი */
 .back-link {
   display: inline-block;
-  margin-top: 30px;
-  background: #5c8c87;
+  margin-top: 45px;
+  background: linear-gradient(135deg, #5c8c87, #7fb3ae);
   color: #fff;
-  padding: 10px 22px;
-  border-radius: 30px;
+  padding: 12px 30px;
+  border-radius: 35px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
-  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: 15px;
+  transition: all 0.35s ease;
+  box-shadow: 0 4px 12px rgba(124, 174, 167, 0.3);
 }
 
 .back-link:hover {
-  background: #7fb3ae;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #7fb3ae, #a8d5cb);
+  box-shadow: 0 6px 16px rgba(124, 174, 167, 0.35);
+}
+
+/* ტექსტის fade-ანიმაცია */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* დამატებით: რეაგირება მცირე ეკრანებზე */
+@media (max-width: 768px) {
+  .blog-post {
+    margin: 50px 15px;
+    padding: 35px 25px;
+  }
+
+  .blog-post h1 {
+    font-size: 26px;
+  }
+
+  .blog-text {
+    font-size: 15.5px;
+    padding: 18px;
+  }
 }

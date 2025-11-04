@@ -1,13 +1,13 @@
 .decoration-candle-section {
   padding: 60px 20px;
   text-align: center;
-  background: #f9f9f9;
+  background: #fdfdfd;
 }
 
 .section-title {
   font-size: 2rem;
   margin-bottom: 40px;
-  color: #333;
+  color: #fffefe;
   font-weight: 600;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .product-card {
-  background: #fff;
+  background: #fbfbfb;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   overflow: hidden;
@@ -52,7 +52,7 @@
 .product-card h3 {
   margin: 15px 0;
   font-size: 1.1rem;
-  color: #444;
+  color: #fdfafa;
 }
 
 .link-wrapper {
@@ -61,8 +61,8 @@
 
 .view-more-link {
   text-decoration: none;
-  background-color: #3c9e8e;
-  color: #fff;
+  background-color: #000000;
+  color: #060505;
   padding: 10px 20px;
   border-radius: 25px;
   font-size: 1rem;
@@ -70,6 +70,6 @@
 }
 
 .view-more-link:hover {
-  background-color: #2b7c6f;
+  background-color: #000000;
   transform: translateY(-2px);
 }
