@@ -5,9 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.95);
-  background-color: #00032c; /* site background */
+  background-color: #00032c; 
 
-  /* Accessibility variables */
   --text-scale: 100%;
 }
 
@@ -44,7 +43,6 @@ body {
   background-color: #00032c;
 }
 
-/* apply text scaling */
 html {
   font-size: calc(16px * (var(--text-scale, 100%) / 100));
 }

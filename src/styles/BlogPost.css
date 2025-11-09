@@ -11,7 +11,6 @@
   animation: fadeIn 1.2s ease;
 }
 
-/* სათაური */
 .blog-post h1 {
   font-size: 32px;
   margin-bottom: 30px;
@@ -33,7 +32,6 @@
   border-radius: 2px;
 }
 
-/* მთავარი ფოტო */
 .blog-image {
   width: 100%;
   border-radius: 22px;
@@ -49,7 +47,7 @@
   filter: brightness(105%);
 }
 
-/* ტექსტი */
+
 .blog-text {
   font-size: 17px;
   color: #444;
@@ -67,19 +65,15 @@
   background: #f7faf9;
 }
 
-/* უკან დაბრუნების ღილაკი */
 .back-link {
   display: inline-block;
-  margin-top: 45px;
-  background: linear-gradient(135deg, #5c8c87, #7fb3ae);
-  color: #fff;
-  padding: 12px 30px;
-  border-radius: 35px;
+  margin-top: 20px;
   text-decoration: none;
-  font-weight: 500;
+  color: #00032c;
+  font-weight: 600;
   font-size: 15px;
   transition: all 0.35s ease;
-  box-shadow: 0 4px 12px rgba(124, 174, 167, 0.3);
+  box-shadow: 0 4px 12px rgba(124, 174, 167, 0.08);
 }
 
 .back-link:hover {
@@ -88,7 +82,6 @@
   box-shadow: 0 6px 16px rgba(124, 174, 167, 0.35);
 }
 
-/* ტექსტის fade-ანიმაცია */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -100,7 +93,6 @@
   }
 }
 
-/* დამატებით: რეაგირება მცირე ეკრანებზე */
 @media (max-width: 768px) {
   .blog-post {
     margin: 50px 15px;

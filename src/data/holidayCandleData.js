@@ -1,5 +1,5 @@
-import HolidayCandle1 from "../components/images/products/HolidayCandle1.jpg";
-import HolidayCandle2 from "../components/images/products/holiday-candle1.jpg"; // მართე სახელები რეალურად არსებული ფაილებით
+import HolidayCandle1 from "../assets/images/products/HolidayCandle1.jpg";
+import HolidayCandle2 from "../assets/images/products/holiday-candle1.jpg"; 
 
 export const holidayCandleProducts = [
   {

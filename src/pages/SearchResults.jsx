@@ -17,10 +17,8 @@ export default function SearchResults() {
         Currently this is a placeholder. You can wire an actual search backend or filter local data here.
       </p>
 
-      {/* Example placeholder for future results */}
       <div className="mt-8">
         <ul className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-          {/* Example static items */}
           <li className="bg-white shadow rounded p-4">Result 1</li>
           <li className="bg-white shadow rounded p-4">Result 2</li>
           <li className="bg-white shadow rounded p-4">Result 3</li>

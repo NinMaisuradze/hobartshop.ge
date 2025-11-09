@@ -1,0 +1,64 @@
+:root {
+  --primary-color: #333;
+  --primary-light: #555;
+  --primary-dark: #222;
+  
+  --secondary-color: #666;
+  --secondary-light: #888;
+  --secondary-dark: #444;
+
+  --success-color: #4caf50;
+  --error-color: #f44336;
+  --warning-color: #ff9800;
+  --info-color: #2196f3;
+
+  --font-family-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-family-secondary: Georgia, 'Times New Roman', Times, serif;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+
+  --max-width: 1200px;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+
+  --transition-fast: 0.2s;
+  --transition-normal: 0.3s;
+  --transition-slow: 0.5s;
+
+  --z-index-dropdown: 100;
+  --z-index-sticky: 200;
+  --z-index-modal: 300;
+  --z-index-tooltip: 400;
+}
+
+[data-theme="dark"] {
+  --primary-color: #fff;
+  --primary-light: #eee;
+  --primary-dark: #ccc;
+  
+  --secondary-color: #aaa;
+  --secondary-light: #888;
+  --secondary-dark: #666;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-xxl: 28px;
+    --font-size-xl: 20px;
+    --spacing-xxl: 32px;
+    --spacing-xl: 24px;
+  }
+}

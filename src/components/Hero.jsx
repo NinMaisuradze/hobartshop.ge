@@ -1,4 +1,3 @@
-// src/components/Hero.jsx
 import "./Hero.css";
 import { useEffect, useState } from "react";
 import s1 from "./images/s1.jpg";

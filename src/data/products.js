@@ -1,5 +1,5 @@
-import candle1 from "../components/images/products/Candle1.jpg";
-import candle2 from "../components/images/products/Candle2.jpg";
+import candle1 from "../assets/images/products/Candle1.jpg";
+import candle2 from "../assets/images/products/Candle2.jpg";
 
 
 export const products = [
@@ -11,8 +11,9 @@ export const products = [
   },
   {
     id: 2,
-    title: { ka: "გულების სანთელი", en: "Candle with Flowers" },
+    title: { ka: "გულების სანთელი", en: "Hearts candle" },
     img: candle2,
     category: "decoration-candle"
   }
+
 ];

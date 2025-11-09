@@ -5,7 +5,7 @@
   padding: 60px 20px;
   justify-content: center;
   align-items: flex-start;
-  background: #00032c; /* სურვილისამებრ შეგიძლია შეცვალო */
+  background: #00032c; 
 }
 
 .product-detail-img {
@@ -51,7 +51,7 @@
 
 .back-link {
   text-decoration: none;
-  color: #3c9e8e;
+  color: #00032c;
   font-weight: 500;
 }
 

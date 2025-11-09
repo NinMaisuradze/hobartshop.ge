@@ -1,0 +1,78 @@
+.plaster-decor-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f3f3f3;
+}
+
+@media (max-width: 768px) {
+  .plaster-decor-section {
+    padding: 40px 15px;
+  }
+}
+
+.plaster-decor-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0; 
+}
+
+.plaster-decor-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .plaster-decor-container h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.plaster-decor-container h1,
+.plaster-decor-container .product-card h3,
+.plaster-decor-container .product-card .price {
+  color: #00032c;
+}
+
+.plaster-decor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .plaster-decor-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .plaster-decor-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+}
+
+.plaster-decor-container .product-card {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: visible; 
+}
+
+@media (max-width: 768px) {
+  .plaster-decor-container .product-card h3 {
+    font-size: 1rem;
+  }
+  .plaster-decor-container .product-card .price {
+    font-size: 0.95rem;
+  }
+}
+
+.plaster-decor-container .product-card img {
+  border-radius: 0;
+}

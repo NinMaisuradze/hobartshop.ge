@@ -286,7 +286,6 @@
   }
 }
 
-/* Mobile header styles */
 @media (max-width: 720px) {
   .header-top { padding: 0.5rem 1rem; }
   .logo img { height: 48px; }

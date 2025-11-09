@@ -1,9 +1,5 @@
 import "./styles/style.css";
 
-import facebookIcon from "./images/icons/facebook.svg";
-import instagramIcon from "./images/icons/instagram.svg";
-import tiktokIcon from "./images/icons/tiktok.svg";
-
 export default function Footer() {
   return (
     <footer className="site-footer" role="contentinfo">
@@ -16,7 +12,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="Facebook"
             >
-              <img src={facebookIcon} alt="Facebook" />
+              <img src="/icons/facebook.svg" alt="Facebook" />
             </a>
 
             <a
@@ -25,7 +21,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <img src={instagramIcon} alt="Instagram" />
+              <img src="/icons/instagram.svg" alt="Instagram" />
             </a>
 
             <a
@@ -34,7 +30,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               aria-label="TikTok"
             >
-              <img src={tiktokIcon} alt="TikTok" />
+              <img src="/icons/tiktok.svg" alt="TikTok" />
             </a>
           </div>
         </div>

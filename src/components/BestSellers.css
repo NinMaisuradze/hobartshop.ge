@@ -77,7 +77,6 @@
   background-color: #b48b18;
 }
 
-/* მობილური */
 @media (max-width: 768px) {
   .best-sellers .grid {
     flex-direction: column;

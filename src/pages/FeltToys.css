@@ -1,0 +1,78 @@
+.felt-toys-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f3f3f3;
+}
+
+@media (max-width: 768px) {
+  .felt-toys-section {
+    padding: 40px 15px;
+  }
+}
+
+.felt-toys-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0; 
+}
+
+.felt-toys-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .felt-toys-container h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.felt-toys-container h1,
+.felt-toys-container .product-card h3,
+.felt-toys-container .product-card .price {
+  color: #00032c;
+}
+
+.felt-toys-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .felt-toys-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .felt-toys-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+}
+
+.felt-toys-container .product-card {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: visible; 
+}
+
+@media (max-width: 768px) {
+  .felt-toys-container .product-card h3 {
+    font-size: 1rem;
+  }
+  .felt-toys-container .product-card .price {
+    font-size: 0.95rem;
+  }
+}
+
+.felt-toys-container .product-card img {
+  border-radius: 0;
+}

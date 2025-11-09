@@ -1,0 +1,137 @@
+:root {
+  --text-scale: 100%;
+}
+:root {
+  --base-font-size: 16px;
+}
+
+html {
+  font-size: var(--base-font-size);
+}
+
+body {
+  font-size: calc(1rem * var(--text-scale) / 100);
+}
+
+body * {
+  font-size: inherit !important;
+}
+
+nav a,
+.nav-link,
+.menu-item,
+header a,
+header button {
+  font-size: inherit !important;
+  transform-origin: left center;
+  transition: font-size 0.3s ease;
+}
+
+.high-contrast {
+  filter: brightness(102%) !important;
+}
+
+.high-contrast a {
+  filter: brightness(102%) !important;
+}
+
+.high-contrast a:hover {
+  filter: brightness(105%) !important;
+  text-decoration: underline !important;
+}
+
+.high-contrast button {
+  filter: brightness(102%) !important;
+}
+
+.high-contrast button:hover {
+  filter: brightness(105%) !important;
+}
+
+.high-contrast h1, 
+.high-contrast h2, 
+.high-contrast h3, 
+.high-contrast h4, 
+.high-contrast h5, 
+.high-contrast h6 {
+  filter: brightness(102%) !important;
+}
+
+.high-contrast img,
+.high-contrast video {
+  filter: brightness(102%) !important;
+}
+
+.high-contrast input,
+.high-contrast textarea,
+.high-contrast select {
+  filter: brightness(102%) !important;
+}
+
+.high-contrast input:focus,
+.high-contrast textarea:focus,
+.high-contrast select:focus {
+  filter: brightness(105%) !important;
+}
+
+.high-contrast *:hover {
+  filter: brightness(105%) !important;
+}
+
+.accessibility-widget {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accessibility-bar {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+}
+
+.bar-btn {
+  padding: 8px 12px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.bar-btn:hover {
+  background: #e0e0e0;
+}
+
+.bar-btn[aria-pressed="true"] {
+  background: #007bff;
+  color: white;
+}
+
+.bar-toggle {
+  padding: 4px 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.access-panel {
+  padding: 16px;
+  border-top: 1px solid #eee;
+}
+
+.access-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.control-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

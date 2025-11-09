@@ -1,0 +1,26 @@
+/* Header ნავიგაციის სტილები */
+.navigation {
+  font-size: inherit !important;
+}
+
+.navigation a,
+.navigation button,
+.nav-link {
+  font-size: inherit !important;
+}
+
+/*მენიუს სტილები */
+.dropdown-menu,
+.submenu {
+  font-size: inherit !important;
+}
+
+.dropdown-menu a,
+.submenu a {
+  font-size: inherit !important;
+}
+
+
+.header-content *:not(img) {
+  font-size: inherit !important;
+}

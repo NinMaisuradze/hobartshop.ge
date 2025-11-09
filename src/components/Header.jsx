@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./styles/style.css";
+import "./styles/header.css";
 import logo from "../assets/logo-removebg-preview.png";
 import { AccessibilityContext } from "../contexts/AccessibilityContext";
 import { useTranslation } from "react-i18next";

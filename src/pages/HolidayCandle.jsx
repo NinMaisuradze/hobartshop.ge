@@ -1,12 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { holidayCandleProducts } from "../data/holidayCandleData";
+import ErrorBoundary from "../components/ErrorBoundary";
 import "./HolidayCandle.css";
 
-export default function HolidayCandlePage() {
+function HolidayCandlePage() {
+  const { i18n, t } = useTranslation();
+  const currentLang = i18n.language;
+
   return (
     <section className="holiday-candle-section">
-      <h2 className="section-title">სადღესასწაულო სანთლები</h2>
+      <h2 className="section-title">
+        {currentLang === "ka" ? "სადღესასწაულო სანთლები" : "Holiday Candles"}
+      </h2>
 
       <div className="products-grid">
         {holidayCandleProducts.map((p) => (
@@ -23,6 +30,14 @@ export default function HolidayCandlePage() {
           </Link>
         ))}
       </div>
+
+      <div className="link-wrapper">
+        <Link to="/products/holiday-candle" className="view-more-link">
+          {currentLang === "ka" ? "მეტის ნახვა" : "View More"}
+        </Link>
+      </div>
     </section>
   );
 }
+
+export default HolidayCandlePage;

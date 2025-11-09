@@ -46,9 +46,11 @@
 }
 
 .back-link {
+  display: inline-block;
+  margin-top: 20px;
   text-decoration: none;
-  color: #3c9e8e;
-  font-weight: 500;
+  color: #00032c;
+  font-weight: 600;
 }
 
 .back-link:hover {

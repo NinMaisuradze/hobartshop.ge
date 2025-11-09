@@ -44,7 +44,7 @@
 
 .back-link {
   text-decoration: none;
-  color: #00032c;
+  color: #00032c; /* restored to dark color for visibility */
   font-weight: 500;
 }
 

@@ -1,4 +1,3 @@
-// src/context/StoreContext.jsx
 import { createContext, useContext, useState, useEffect } from "react";
 
 const StoreContext = createContext();
@@ -43,8 +42,8 @@ export const StoreProvider = ({ children }) => {
   return (
     <StoreContext.Provider
       value={{
-        cart, // Correctly providing 'cart' state
-        wishlist, // Correctly providing 'wishlist' state
+        cart, 
+        wishlist, 
         addToCart,
         removeFromCart,
         changeQty,

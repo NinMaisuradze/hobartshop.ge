@@ -1,4 +1,3 @@
-// src/components/ProductCard.jsx
 import { useStore } from "../contexts/StoreContext";
 
 const ProductCard = ({ product }) => {

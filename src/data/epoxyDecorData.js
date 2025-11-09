@@ -1,4 +1,4 @@
-import EpoxyTable1 from "../components/images/products/EpoxyDecor.jpg"; // სურათის იმპორტი
+import EpoxyTable1 from "../assets/images/products/EpoxyDecor.jpg"; 
 
 export const epoxyDecorProducts = [
   {
@@ -6,7 +6,6 @@ export const epoxyDecorProducts = [
     name: "ლოკოკინას ქოთანი",
     description: "ეს პროდუქტი არის ხელნაკეთი ეპოქსიდის ლოკოკინის ფორმის ქოთანი ",
     price: "35₾",
-    image: EpoxyTable1 // აქ გამოიყენე იმპორტირებული სურათი
+    image: EpoxyTable1 
   },
-  // შეგიძლია დაამატო სხვა პროდუქტები იმავე წესით
 ];

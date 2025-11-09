@@ -1,4 +1,3 @@
-// src/pages/AccessoriesDetail.jsx
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { accessoriesProducts } from "../data/accessoriesData";
@@ -11,11 +10,11 @@ export default function AccessoriesDetail() {
   if (!product) {
     return (
       <div className="product-detail not-found">
-        <p>პროდუქტი ვერ მოიძებნა</p>
-        <Link to="/products/accessory" className="back-link">
-          უკან აქსესუარების სიაში
-        </Link>
-      </div>
+          <p>პროდუქტი ვერ მოიძებნა</p>
+          <Link to="/products/accessories" className="back-link">
+            უკან აქსესუარების სიაში
+          </Link>
+        </div>
     );
   }
 
@@ -29,7 +28,7 @@ export default function AccessoriesDetail() {
         <h1>{product.name}</h1>
         <p className="description">{product.description}</p>
         <p className="price">{product.price}</p>
-        <Link to="/products/accessory" className="back-link">
+        <Link to="/products/accessories" className="back-link">
           უკან აქსესუარების სიაში
         </Link>
       </div>

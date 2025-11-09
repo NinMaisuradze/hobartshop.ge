@@ -6,6 +6,36 @@
   --secondary: #fff;
   --text: #00032c;
   --focus: #e2c96f;
+
+
+  --text-scale: 100%;
+}
+
+
+html {
+  font-size: var(--text-scale);
+}
+
+.high-contrast {
+  background-color: black;
+  color: yellow;
+}
+.high-contrast button {
+  background-color: yellow;
+  color: black;
+}
+
+
+
+
+:root {
+  --site-bg: #00032c;
+  --header-bg: #fff;
+  --logo-color: #00032c;
+  --primary: #b48b18;
+  --secondary: #fff;
+  --text: #00032c;
+  --focus: #e2c96f;
 }
 
 .accessibility-widget {
@@ -120,6 +150,19 @@
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .header-inner {
+    padding: 1rem 1.5rem 0.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-inner {
+    padding: 0.8rem 1rem 0.5rem;
+  }
+}
+
 .logo {
   text-decoration: none;
   background: transparent;
@@ -136,6 +179,18 @@
   background: transparent;
   box-shadow: none;
   border: none;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    max-height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    max-height: 40px;
+  }
 }
 
 .logo-text {
@@ -158,6 +213,23 @@
   }
 }
 
+@media (max-width: 768px) {
+  .header-controls {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-controls {
+    gap: 15px;
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-between;
+    order: 2;
+    margin-top: 0.5rem;
+  }
+}
+
 .location-select {
   display: flex;
   align-items: center;
@@ -165,6 +237,18 @@
   color: #ffffff;
   font-size: 0.95rem;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .location-select {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-select {
+    font-size: 0.85rem;
+  }
 }
 
 .flag-icon {
@@ -207,14 +291,14 @@
 }
 .primary-nav a,
 .submenu-toggle,
-.new {   /* „New Product“ დამატებით აქ */
-  color: var(--text);       /* მთავარი ფერი */
+.new {  
+  color: var(--text);       
   text-decoration: none;
   background: none;
   border: none;
   font: inherit;
-  font-size: 0.95rem;       /* ყველა ერთნაირი ზომა */
-  font-weight: 600;          /* ყველა ნავიგაცია bold */
+  font-size: 0.95rem;      
+  font-weight: 600;        
   letter-spacing: 0.8px;
   cursor: pointer;
   padding: 0.25rem;
@@ -344,14 +428,10 @@
   }
 }
 
-/* === accessibility safety rules: prevent overlap with other icons === */
-
-/* slight left offset when floating so it doesn't cover header icons */
 .accessibility-widget {
   right: 80px;
 }
 
-/* header-specific placement: if you move the widget into .header-controls, these rules apply */
 .site-header .accessibility-widget {
   position: relative;
   display: inline-flex;
