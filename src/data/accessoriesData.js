@@ -11,8 +11,8 @@ export const accessoriesProducts = [
   },
   {
     id: 2,
-    name: "ბეჭედი",
-    description: "ხელნაკეთი ოქროსფერი ბეჭედი, იდეალურია საჩუქრად.",
+    name: "სამაჯური",
+    description: "ტყავის სამაჯური ლამაზი ორნამენტებით.",
     price: "25₾",
     image: Accessory2
   }

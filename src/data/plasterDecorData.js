@@ -1,6 +1,6 @@
-import plaster1 from "../assets/images/products/480038209_548418594894935_6564540801318933930_n.jpg";
-import plaster2 from "../assets/images/products/480242769_550031321400329_1973864845561396949_n.jpg";
-import plaster3 from "../assets/images/products/480259381_550031258067002_5132082937389909261_n.jpg";
+import plaster1 from "../components/images/Decor1.jpg";
+import plaster2 from "../components/images/Decor2.jpg";
+import plaster3 from "../components/images/Decor3.jpg";
 
 export const plasterDecorProducts = [
   {

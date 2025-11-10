@@ -1,6 +1,6 @@
-import felt1 from "../assets/images/products/480427636_550031348066993_8197454106155330096_n.jpg";
-import felt2 from "../assets/images/products/480411924_550031404733654_2385914404154499831_n.jpg";
-import felt3 from "../assets/images/products/480349393_550031301400331_2083627429682222605_n.jpg";
+import felt1 from "../components/images/toy1.jpg";
+import felt2 from "../components/images/toy2.jpg";
+import felt3 from "../components/images/toy3.jpg";
 
 export const feltToysProducts = [
   {

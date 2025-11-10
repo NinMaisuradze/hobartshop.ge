@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./styles/style.css";
-import "./styles/header.css";
 import logo from "../assets/logo-removebg-preview.png";
 import { AccessibilityContext } from "../contexts/AccessibilityContext";
 import { useTranslation } from "react-i18next";
@@ -145,10 +144,11 @@ export default function Header() {
                     </ul>
                   )}
                 </li>
-                <li><Link to="/products/epoxy-decor" style={{ fontSize: "16px" }}>{t("epoxy Decor")}</Link></li>
-                <li><Link to="/products/accessories" style={{ fontSize: "16px" }}>{t("accessories")}</Link></li>
-                <li><Link to="/products/plaster-decor" style={{ fontSize: "16px" }}>{t("plaster Decor")}</Link></li>
-                <li><Link to="/products/felt-toys" style={{ fontSize: "16px" }}>{t("felt Toys")}</Link></li>
+                <li><Link to="/products/epoxy-decor">{t("EpoxyDecor")}</Link></li>
+                <li><Link to="/products/accessories">{t("Accessories")}</Link></li>
+                <li><Link to="/products/plaster-decor">{t("PlasterDecor")}</Link></li>
+               <li><Link to="/products/felt-toys">{t("FeltToys")}</Link></li>
+
               </ul>
             )}
           </li>

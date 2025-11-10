@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AccessibilityProvider } from "./contexts/AccessibilityContext";
 import { StoreProvider } from "./contexts/StoreContext";
-import AccessibilityWidget from "./components/AccessibilityWidget";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -29,7 +28,9 @@ import AccessoriesDetail from "./pages/AccessoriesDetail";
 import PlasterDecor from "./pages/PlasterDecor";
 import PlasterDecorDetail from "./pages/PlasterDecorDetail";
 import FeltToys from "./pages/FeltToys";
-import FeltToysDetail from "./pages/FeltToysDetail";
+import FeltToysDetails from "./pages/FeltToysDetails";
+
+
 
 function InnerApp() {
   const currentLang = "ka";
@@ -63,9 +64,12 @@ function InnerApp() {
         <Route path="/products/plaster-decor" element={<PlasterDecor />} />
         <Route path="/products/plaster-decor/:id" element={<PlasterDecorDetail />} />
         
-        {/* თექის სათამაშოები */}
-        <Route path="/products/felt-toys" element={<FeltToys />} />
-        <Route path="/products/felt-toys/:id" element={<FeltToysDetail />} />
+       {/* თექის სათამაშოები */}
+ <Route path="/products/felt-toys" element={<FeltToys />} />
+<Route path="/products/felt-toys/:id" element={<FeltToysDetails />} />
+
+
+
 
         {/* ბლოგი */}
         <Route path="/blog" element={<BlogList />} />
@@ -75,8 +79,7 @@ function InnerApp() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
-      <Footer />
-      <AccessibilityWidget />
+      <Footer /> {/* Accessibility Widget აღარ არის აქ */}
     </BrowserRouter>
   );
 }

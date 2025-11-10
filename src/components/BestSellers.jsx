@@ -1,9 +1,9 @@
 import React from "react";
 import "./BestSellers.css";
-import s1 from "./images/B1.jpg";
-import s2 from "./images/B2.jpg";
-import s3 from "./images/B3.jpg";
-import s51 from './images/s51.jpg'; 
+import s1 from "../components/images/Candle1.jpg"
+import s2 from "./images/S5.jpg";
+import s3 from "./images/S3.jpg";
+import s51 from './images/s2.jpg'; 
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -12,8 +12,8 @@ export default function BestSellers() {
 
   const items = [
     { id: 1, title: t("bestSeller1"), img: s1, link: "/products/decoration-candle" },
-    { id: 2, title: t("bestSeller2"), img: s2, link: "/products/accessory" },
-    { id: 3, title: t("bestSeller3"), img: s3, link: "/products/accessory" },
+    { id: 2, title: t("bestSeller2"), img: s2, link: "/products/accessories" },
+    { id: 3, title: t("bestSeller3"), img: s3, link: "/products/epoxy-Decor" },
     { id: 4, title: t("bestSeller4"), img: s51, link: "/products/holiday-candle"},
   ];
 

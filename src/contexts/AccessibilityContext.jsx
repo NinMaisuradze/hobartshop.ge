@@ -15,13 +15,13 @@ export const AccessibilityProvider = ({ children }) => {
     if (savedContrast) setHighContrast(savedContrast === "true");
   }, []);
 
-
+  // Update text size
   useEffect(() => {
     document.documentElement.style.setProperty("--text-scale", `${textSize}%`);
     localStorage.setItem("textSize", textSize.toString());
   }, [textSize]);
 
- 
+  // Update contrast
   useEffect(() => {
     document.documentElement.classList.toggle("high-contrast", highContrast);
     localStorage.setItem("highContrast", highContrast.toString());
