@@ -1,14 +1,14 @@
 import "./Hero.css";
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next"; // დამატება
+import { useTranslation } from "react-i18next"; 
 import s1 from "../components/images/s1.jpg";
 import s2 from "../components/images/s2.jpg";
 import s3 from "../components/images/s3.jpg";
 import s4 from "../components/images/s4.jpg";
-import s5 from "../components/images/s5.jpg"; // შენ იყენებ s4 ორჯერ, გავასწორე
+import s5 from "../components/images/S5.jpg"; 
 
 export default function Hero() {
-  const { t } = useTranslation(); // i18n hook
+  const { t } = useTranslation(); 
   const images = [s1, s2, s3, s4, s5];
   const [current, setCurrent] = useState(0);
 
