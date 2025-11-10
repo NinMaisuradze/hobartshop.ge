@@ -2,7 +2,7 @@ import React from "react";
 import "./BestSellers.css";
 import s1 from "../components/images/Candle1.jpg"
 import s2 from "./images/s5.jpg";
-import s3 from "./images/S3.jpg";
+import s3 from "./images/s3.jpg";
 import s51 from './images/s2.jpg'; 
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
