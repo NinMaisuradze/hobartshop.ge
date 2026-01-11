@@ -1,20 +1,24 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { plasterDecorProducts } from '../data/plasterDecorData';
+import { useTranslation } from 'react-i18next';
+import AddToCart from '../components/AddToCart';
 import { generateProductJsonLd } from '../utils/structuredData';
 import './PlasterDecor.css';
 
 export default function PlasterDecorDetail() {
   const { id } = useParams();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
   const product = plasterDecorProducts.find((p) => p.id === parseInt(id));
 
   useEffect(() => {
 
     if (product) {
-      document.title = `${product.name} | HobArt თაბაშირის დეკორი`;
+      document.title = `${product.name} | HobArt ${t("PlasterDecor")}`;
       document.querySelector('meta[name="description"]')?.setAttribute(
         'content',
-        `${product.description} | HobArt-ის ხელნაკეთი თაბაშირის დეკორი.`
+        `${product.description} | HobArt-ის ხელნაკეთი ${t("PlasterDecor").toLowerCase()}.`
       );
 
       const script = document.createElement('script');
@@ -26,13 +30,15 @@ export default function PlasterDecorDetail() {
         document.head.removeChild(script);
       };
     }
-  }, [product]);
+  }, [product, t]);
 
   if (!product) {
     return (
       <div className="product-detail not-found">
-        <p>პროდუქტი ვერ მოიძებნა</p>
-        <Link to="/products/plaster-decor" className="back-link">უკან თაბაშირის დეკორზე</Link>
+        <p>{t("productDetail.notFound")}</p>
+        <Link to="/products/plaster-decor" className="back-link">
+          {t("productDetail.backToPlasterDecor")}
+        </Link>
       </div>
     );
   }
@@ -53,8 +59,9 @@ export default function PlasterDecorDetail() {
             </span>
           </span>
         </p>
-        <Link to="/products/plaster-decor" className="back-link" aria-label="უკან თაბაშირის დეკორის გვერდზე">
-          უკან თაბაშირის დეკორზე
+        <AddToCart product={product} />
+        <Link to="/products/plaster-decor" className="back-link" aria-label={t("productDetail.backToPlasterDecor")}>
+          {t("productDetail.backToPlasterDecor")}
         </Link>
       </div>
     </article>

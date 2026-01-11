@@ -1,4 +1,3 @@
-// src/components/AccessibilityWidget.jsx
 import { useContext, useState } from "react";
 import { AccessibilityContext } from "../contexts/AccessibilityContext";
 import "./styles/style.css";

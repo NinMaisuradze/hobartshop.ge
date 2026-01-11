@@ -7,12 +7,14 @@ export const products = [
     id: 1,
     title: { ka: "წყვილის სანთელი", en: "Couple Candle" },
     img: candle1,
+    price: 35,
     category: "decoration-candle"
   },
   {
     id: 2,
     title: { ka: "გულების სანთელი", en: "Hearts candle" },
     img: candle2,
+    price: 35,
     category: "decoration-candle"
   }
 

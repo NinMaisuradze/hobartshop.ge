@@ -8,12 +8,13 @@ import Hero from "./components/Hero";
 import BestSellers from "./components/BestSellers";
 import Contact from "./components/Contact";
 import About from "./components/About";
-import SearchResults from "./pages/SearchResults";
 import DecorationCandle from "./assets/images/products/DecorationCandle";
-import DecorationCandleDetail from "./assets/images/products/DecorationCandleDetail";
+import DecorationCandleDetail from "./pages/DecorationCandleDetail";
 import BlogList from "./pages/Blog/BlogList";
 import BlogPost from "./pages/Blog/BlogPost";
 import Cart from "./components/Cart";
+import CheckoutPage from "./pages/CheckoutPage";
+import OrdersHistory from "./pages/OrdersHistory";
 import Wishlist from "./components/Wishlist";
 
 import HolidayCandlePage from "./pages/HolidayCandle";
@@ -42,7 +43,6 @@ function InnerApp() {
         <Route path="/" element={<><Hero /><BestSellers /></>} />
         <Route path="/contact" element={<Contact lang={currentLang} />} />
         <Route path="/about" element={<About lang={currentLang} />} />
-        <Route path="/search" element={<SearchResults lang={currentLang} />} />
 
         {/* 🕯 დეკორატიული სანთლები */}
         <Route path="/products/decoration-candle" element={<DecorationCandle lang={currentLang} />} />
@@ -75,8 +75,10 @@ function InnerApp() {
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:id" element={<BlogPost />} />
 
-        {/* კალათი და სასურველებში */}
+        {/* კალათი, გადახდა, დაკვეთები და სასურველებში */}
         <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/orders" element={<OrdersHistory />} />
         <Route path="/wishlist" element={<Wishlist />} />
       </Routes>
       <Footer /> {/* Accessibility Widget აღარ არის აქ */}

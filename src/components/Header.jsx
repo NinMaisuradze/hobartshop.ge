@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef, useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./styles/style.css";
 import logo from "../assets/logo-removebg-preview.png";
 import { AccessibilityContext } from "../contexts/AccessibilityContext";
+import { useStore } from "../contexts/StoreContext";
 import { useTranslation } from "react-i18next";
 
 export default function Header() {
@@ -11,14 +12,16 @@ export default function Header() {
   const [accessPanelOpen, setAccessPanelOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
 
-  const navigate = useNavigate();
   const accessRef = useRef(null);
   const langRef = useRef(null);
   const productBtnRef = useRef(null);
   const submenuRef = useRef(null);
 
+  const { cart } = useStore();
   const { setTextSize, setHighContrast, setIsMuted, disableAccessibility } = useContext(AccessibilityContext);
   const { t, i18n } = useTranslation();
+
+  const cartItemsCount = cart.reduce((sum, item) => sum + item.qty, 0);
 
   useEffect(() => {
     function handleClickOutside(e) {
@@ -68,6 +71,21 @@ export default function Header() {
         </div>
 
         <div className="right-area" style={{ display: "flex", alignItems: "center", gap: "15px" }}>
+          {/* Cart Icon */}
+          <Link to="/cart" className="cart-icon-btn" style={{ position: "relative", display: "flex", alignItems: "center", fontSize: "20px", textDecoration: "none", color: "#3c9e8e" }}>
+            🛒
+            {cartItemsCount > 0 && (
+              <span className="cart-badge" style={{ position: "absolute", top: "-8px", right: "-8px", background: "#e74c3c", color: "white", borderRadius: "50%", width: "24px", height: "24px", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: "700", fontSize: "12px" }}>
+                {cartItemsCount}
+              </span>
+            )}
+          </Link>
+
+          {/* Orders Icon */}
+          <Link to="/orders" className="orders-icon-btn" style={{ display: "flex", alignItems: "center", fontSize: "20px", textDecoration: "none", color: "#3c9e8e" }}>
+            📋
+          </Link>
+
           {/* Accessibility */}
           <div className={`access-header ${accessPanelOpen ? "open" : ""}`} ref={accessRef} style={{ position: "relative" }}>
             <button
@@ -139,8 +157,8 @@ export default function Header() {
                   </button>
                   {decorationOpen && (
                     <ul style={{ position: "absolute", top: 0, left: "100%", background: "#fff", border: "1px solid #ccc", borderRadius: "4px", padding: "10px", minWidth: "180px" }}>
-                      <li><Link to="/products/holiday-candle" style={{ fontSize: "16px" }}>{t("Holiday Candle")}</Link></li>
-                      <li><Link to="/products/decoration-candle" style={{ fontSize: "16px" }}>{t("Decoration Candle")}</Link></li>
+                      <li><Link to="/products/holiday-candle" style={{ fontSize: "16px" }}>{t("HolidayCandle")}</Link></li>
+                      <li><Link to="/products/decoration-candle" style={{ fontSize: "16px" }}>{t("DecorationCandle")}</Link></li>
                     </ul>
                   )}
                 </li>

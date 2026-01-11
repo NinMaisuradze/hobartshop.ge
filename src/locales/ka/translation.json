@@ -40,7 +40,12 @@
   "disableAccessibility": "წვდომადობის გამორთვა",
   "productDetail": {
     "notFound": "პროდუქტი ვერ მოიძებნა",
-    "backToList": "უკან დეკორატიულ სანთლებზე",
+    "backToDecorationCandles": "უკან დეკორატიულ სანთლებზე",
+    "backToHolidayCandles": "უკან სადღესასწაულო სანთლებზე",
+    "backToEpoxyDecor": "უკან ეპოქსიდის დეკორში",
+    "backToAccessories": "უკან აქსესუარებზე",
+    "backToPlasterDecor": "უკან თაბაშირის დეკორში",
+    "backToFeltToys": "უკან თექის სათამაშოებზე",
     "titleCoupleCandle": "წყვილის სანთელი",
     "description": "ეს სანთელი მზადებულია 100% სოიოს ცვილით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     "price": "ფასი: 12₾",

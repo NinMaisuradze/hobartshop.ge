@@ -64,12 +64,7 @@
   filter: none;
 }
 
-.search-btn {
-  background: transparent;
-  border: none;
-  font-size: 1.25rem;
-  padding: 0.25rem 0.5rem;
-}
+
 
 .primary-nav .nav-list {
   display: flex;

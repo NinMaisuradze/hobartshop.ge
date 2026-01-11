@@ -1,14 +1,15 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import { products } from "../../../data/products";
+import { products } from "../data/products";
 import { useTranslation } from "react-i18next";
+import AddToCart from "../components/AddToCart";
 import "./DecorationCandleDetail.css";
 
-export default function DecorationCandleDetail({ lang }) {
+export default function DecorationCandleDetail() {
   const { id } = useParams();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language;
 
-  // მოძებნეთ პროდუქტი products მასივში
   const product = products.find((p) => p.id === parseInt(id));
 
   if (!product) {
@@ -16,7 +17,7 @@ export default function DecorationCandleDetail({ lang }) {
       <div className="product-detail not-found">
         <p>{t("productDetail.notFound")}</p>
         <Link to="/products/decoration-candle" className="back-link">
-          {t("productDetail.backToList")}
+          {t("productDetail.backToDecorationCandles")}
         </Link>
       </div>
     );
@@ -24,27 +25,30 @@ export default function DecorationCandleDetail({ lang }) {
 
   return (
     <section className="product-detail">
-      {/* პროდუქტის ფოტო */}
+      {/* Product Image */}
       <div className="product-detail-img">
         <img src={product.img} alt={product.title[lang]} />
       </div>
 
-      {/* პროდუქტის ინფორმაცია */}
+      {/* Product Information */}
       <div className="product-detail-info">
-        {/* ორენოვანი სათაური */}
+        {/* Title */}
         <h1>
           {product.id === 1
-            ? t("productDetail.titleCoupleCandle") // წყვილის სანთელი
+            ? t("productDetail.titleCoupleCandle") 
             : product.title[lang]} 
         </h1>
 
-        {/* აღწერა და ფასი თარგმანით */}
+        {/* Description and Price */}
         <p>{t("productDetail.description")}</p>
         <p className="price">{t("productDetail.price")}</p>
 
-        {/* უკან ბმული */}
+        {/* Add to Cart */}
+        <AddToCart product={product} />
+
+        {/* Back Link */}
         <Link to="/products/decoration-candle" className="back-link">
-          {t("productDetail.back")}
+          {t("productDetail.backToDecorationCandles")}
         </Link>
       </div>
     </section>

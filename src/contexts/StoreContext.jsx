@@ -14,10 +14,10 @@ export const StoreProvider = ({ children }) => {
       const existing = prev.find((p) => p.id === product.id);
       if (existing) {
         return prev.map((p) =>
-          p.id === product.id ? { ...p, qty: p.qty + 1 } : p
+          p.id === product.id ? { ...p, qty: p.qty + (product.qty || 1) } : p
         );
       }
-      return [...prev, { ...product, qty: 1 }];
+      return [...prev, { ...product, qty: product.qty || 1 }];
     });
   };
 

@@ -5,7 +5,7 @@ export const AudioContext = createContext(null);
 export const AudioProvider = ({ children }) => {
   const [isMuted, setIsMuted] = useState(false);
 
-  // წამოვიღოთ localStorage-დან
+
   useEffect(() => {
     try {
       const stored = localStorage.getItem("isMuted");
@@ -17,7 +17,7 @@ export const AudioProvider = ({ children }) => {
     }
   }, []);
 
-  // შევინახოთ localStorage-ში
+
   useEffect(() => {
     try {
       localStorage.setItem("isMuted", isMuted.toString());
