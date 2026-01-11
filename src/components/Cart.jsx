@@ -3,6 +3,23 @@ import { useStore } from "../contexts/StoreContext";
 import { useTranslation } from "react-i18next";
 import "./Cart.css";
 
+const GEL_TO_USD = 0.37; // ამჟამინდელი კურსი
+
+const isEnglishLang = (lang) => {
+  if (!lang || typeof lang !== "string") return false;
+  return lang === "en" || lang.startsWith("en") || lang.includes("en");
+};
+
+const convertPrice = (price, lang) => {
+  const isEn = isEnglishLang(lang);
+  if (isEn) {
+    return (price * GEL_TO_USD).toFixed(2);
+  }
+  return price.toFixed(2);
+};
+
+const getCurrency = (lang) => (isEnglishLang(lang) ? "$" : "₾");
+
 export default function Cart() {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
@@ -10,6 +27,8 @@ export default function Cart() {
 
   const totalPrice = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
   const totalItems = cart.reduce((sum, item) => sum + item.qty, 0);
+    const shippingPrice = totalPrice > 100 ? 0 : 5;
+    const finalTotal = totalPrice + shippingPrice;
 
   if (cart.length === 0) {
     return (
@@ -32,7 +51,7 @@ export default function Cart() {
   return (
     <div className="cart-container">
       <h1 className="cart-title">
-        {lang === "ka" ? "სიტყვა შენი" : "Shopping Cart"}
+         {lang === "ka" ? "კალათა" : "Shopping Cart"}
         <span className="item-count">({totalItems})</span>
       </h1>
 
@@ -45,7 +64,9 @@ export default function Cart() {
 
               <div className="item-details">
                 <h3>{item.name || item.title}</h3>
-                <p className="item-price">{item.price}₾</p>
+                  <p className="item-price">
+                    {convertPrice(item.price, lang)}{getCurrency(lang)}
+                  </p>
               </div>
 
               <div className="quantity-control">
@@ -66,7 +87,9 @@ export default function Cart() {
                 </button>
               </div>
 
-              <div className="item-total">{(item.price * item.qty).toFixed(2)}₾</div>
+                <div className="item-total">
+                  {convertPrice(item.price * item.qty, lang)}{getCurrency(lang)}
+                </div>
 
               <button
                 onClick={() => removeFromCart(item.id)}
@@ -85,20 +108,16 @@ export default function Cart() {
 
           <div className="summary-row">
             <span>{lang === "ka" ? "ქვესულ:" : "Subtotal:"}</span>
-            <span>{totalPrice.toFixed(2)}₾</span>
+             <span>{convertPrice(totalPrice, lang)}{getCurrency(lang)}</span>
           </div>
 
           <div className="summary-row">
-            <span>{lang === "ka" ? "მტვერი და დამუშავება:" : "Shipping:"}</span>
+              <span>{lang === "ka" ? "ს ტრანსპორტირება:" : "Shipping:"}</span>
             <span className="shipping">
-              {totalPrice > 100 ? (
-                <>
-                  <span className="discount">უფასო</span>
-                </>
+                {shippingPrice === 0 ? (
+                  <span className="discount">{lang === "ka" ? "უფასო" : "FREE"}</span>
               ) : (
-                <>
-                  5₾
-                </>
+                  convertPrice(shippingPrice, lang) + getCurrency(lang)
               )}
             </span>
           </div>
@@ -106,7 +125,7 @@ export default function Cart() {
           <div className="summary-row total">
             <span>{lang === "ka" ? "სულ:" : "Total:"}</span>
             <span>
-              {(totalPrice + (totalPrice > 100 ? 0 : 5)).toFixed(2)}₾
+                {convertPrice(finalTotal, lang)}{getCurrency(lang)}
             </span>
           </div>
 
@@ -118,7 +137,7 @@ export default function Cart() {
             {lang === "ka" ? "შოპინგის გაგრძელება" : "Continue Shopping"}
           </Link>
 
-          {totalPrice > 100 && (
+          {shippingPrice === 0 && (
             <div className="free-shipping-badge">
               ✓ {lang === "ka" ? "უფასო მტვერი" : "Free Shipping"}
             </div>

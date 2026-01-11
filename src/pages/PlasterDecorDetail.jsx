@@ -4,6 +4,7 @@ import { plasterDecorProducts } from '../data/plasterDecorData';
 import { useTranslation } from 'react-i18next';
 import AddToCart from '../components/AddToCart';
 import { generateProductJsonLd } from '../utils/structuredData';
+import { convertPrice, getCurrency } from '../utils';
 import './PlasterDecor.css';
 
 export default function PlasterDecorDetail() {
@@ -54,8 +55,8 @@ export default function PlasterDecorDetail() {
         <p className="price">
           <span itemProp="offers" itemScope itemType="https://schema.org/Offer">
             <meta itemProp="priceCurrency" content="GEL" />
-            <span itemProp="price" content={product.price?.replace('₾', '').trim()}>
-              {product.price}
+            <span itemProp="price" content={String(product.price)}>
+              {convertPrice(product.price, i18n.language)}{getCurrency(i18n.language)}
             </span>
           </span>
         </p>

@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { holidayCandleProducts } from "../data/holidayCandleData";
+import { convertPrice, getCurrency } from "../utils";
 import ErrorBoundary from "../components/ErrorBoundary";
 import "./HolidayCandle.css";
 
@@ -66,7 +67,7 @@ function HolidayCandlePage() {
                   <div className="product-info">
                     <h3 className="product-name">{product.name}</h3>
                     <p className="product-description">{product.description}</p>
-                    <p className="price">{product.price}</p>
+                    <p className="price">{convertPrice(product.price, i18n.language)}{getCurrency(i18n.language)}</p>
                   </div>
                 </Link>
               ))}

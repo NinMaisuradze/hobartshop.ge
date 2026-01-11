@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { accessoriesProducts } from "../data/accessoriesData";
 import "./Accessories.css";
+import { convertPrice, getCurrency } from "../utils";
 
 function Accessories() {
   const { t, i18n } = useTranslation();
@@ -18,7 +19,7 @@ function Accessories() {
             </div>
             <h3>{product.name}</h3>
             <p className="description">{product.description}</p>
-            <p className="price">{product.price}</p>
+            <p className="price">{convertPrice(product.price, i18n.language)}{getCurrency(i18n.language)}</p>
           </Link>
         ))}
       </div>

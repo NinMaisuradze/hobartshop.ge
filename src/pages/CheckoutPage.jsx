@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useStore } from "../contexts/StoreContext";
+import { convertPrice, getCurrency } from "../utils";
 import "./CheckoutPage.css";
 
 export default function CheckoutPage() {
@@ -224,14 +225,14 @@ export default function CheckoutPage() {
                   <div key={item.id} className="order-item">
                     <div className="item-name">{item.name}</div>
                     <div className="item-qty">{item.qty}x</div>
-                    <div className="item-price">{(item.price * item.qty).toFixed(2)}₾</div>
+                    <div className="item-price">{convertPrice(item.price * item.qty, i18n.language)}{getCurrency(i18n.language)}</div>
                   </div>
                 ))}
               </div>
 
               <div className="order-total">
                 <span>{lang === "ka" ? "სულ:" : "Total:"}</span>
-                <span className="total-amount">{calculateTotal().toFixed(2)}₾</span>
+                <span className="total-amount">{convertPrice(calculateTotal(), i18n.language)}{getCurrency(i18n.language)}</span>
               </div>
             </>
           )}

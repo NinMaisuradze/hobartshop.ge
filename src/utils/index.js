@@ -2,6 +2,21 @@ export const formatPrice = (price, currency = '₾') => {
   return `${price}${currency}`;
 };
 
+export const GEL_TO_USD = 0.37;
+
+export const isEnglishLang = (lang) => {
+  if (!lang || typeof lang !== 'string') return false;
+  return lang === 'en' || lang.startsWith('en') || lang.includes('en');
+};
+
+export const convertPrice = (price, lang) => {
+  const isEn = isEnglishLang(lang);
+  if (isEn) return (price * GEL_TO_USD).toFixed(2);
+  return Number(price).toFixed(2);
+};
+
+export const getCurrency = (lang) => (isEnglishLang(lang) ? '$' : '₾');
+
 export const getImageUrl = (path) => {
   if (path.startsWith('http')) return path;
   return `/assets/images/${path}`;

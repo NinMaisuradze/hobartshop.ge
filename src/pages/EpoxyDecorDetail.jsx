@@ -4,6 +4,7 @@ import { epoxyDecorProducts } from "../data/epoxyDecorData";
 import { useTranslation } from "react-i18next";
 import AddToCart from "../components/AddToCart";
 import "./EpoxyDecorDetail.css";
+import { convertPrice, getCurrency } from "../utils";
 
 export default function EpoxyDecorDetail() {
   const { id } = useParams();
@@ -32,7 +33,7 @@ export default function EpoxyDecorDetail() {
       <div className="product-detail-info">
         <h1>{product.name}</h1>
         <p className="description">{product.description}</p>
-        <p className="price">{product.price}</p>
+        <p className="price">{convertPrice(product.price, i18n.language)}{getCurrency(i18n.language)}</p>
         <AddToCart product={product} />
         <Link to="/products/epoxy-decor" className="back-link">
           {t("productDetail.backToEpoxyDecor")}

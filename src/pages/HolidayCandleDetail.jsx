@@ -4,6 +4,7 @@ import { holidayCandleProducts } from "../data/holidayCandleData";
 import { useTranslation } from "react-i18next";
 import AddToCart from "../components/AddToCart";
 import "./HolidayCandleDetail.css";
+import { convertPrice, getCurrency } from "../utils";
 
 export default function HolidayCandleDetail() {
   const { id } = useParams();
@@ -37,7 +38,7 @@ export default function HolidayCandleDetail() {
         
         <p className="description">{product.description}</p>
         
-        <p className="price">{product.price}</p>
+        <p className="price">{convertPrice(product.price, i18n.language)}{getCurrency(i18n.language)}</p>
 
         <AddToCart product={product} />
 

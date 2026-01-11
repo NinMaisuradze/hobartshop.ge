@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { convertPrice, getCurrency } from "../utils";
 import { Link } from "react-router-dom";
 import "./OrdersHistory.css";
 
@@ -78,8 +79,8 @@ export default function OrdersHistory() {
                     <tr key={item.id}>
                       <td>{item.name || item.title}</td>
                       <td>{item.qty}</td>
-                      <td>{item.price}₾</td>
-                      <td className="item-total">{(item.price * item.qty).toFixed(2)}₾</td>
+                      <td>{convertPrice(item.price, i18n.language)}{getCurrency(i18n.language)}</td>
+                      <td className="item-total">{convertPrice(item.price * item.qty, i18n.language)}{getCurrency(i18n.language)}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -117,7 +118,7 @@ export default function OrdersHistory() {
 
               <div className="order-total-section">
                 <h4>{lang === "ka" ? "სულ:" : "Total:"}</h4>
-                <p className="total-amount">{order.total.toFixed(2)}₾</p>
+                <p className="total-amount">{convertPrice(order.total, i18n.language)}{getCurrency(i18n.language)}</p>
               </div>
             </div>
           </div>

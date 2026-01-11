@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import './PlasterDecor.css';
 import { plasterDecorProducts } from '../data/plasterDecorData';
+import { convertPrice, getCurrency } from '../utils';
 
 const PlasterDecor = () => {
   const { t, i18n } = useTranslation();
@@ -19,7 +20,7 @@ const PlasterDecor = () => {
               <img src={p.image} alt={p.name} />
             </div>
             <h3>{p.name}</h3>
-            <p className="price">{p.price}</p>
+            <p className="price">{convertPrice(p.price, i18n.language)}{getCurrency(i18n.language)}</p>
           </Link>
         ))}
       </div>

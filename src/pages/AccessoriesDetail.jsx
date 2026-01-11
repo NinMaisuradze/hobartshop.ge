@@ -4,6 +4,7 @@ import { accessoriesProducts } from "../data/accessoriesData";
 import { useTranslation } from "react-i18next";
 import AddToCart from "../components/AddToCart";
 import "./AccessoriesDetail.css";
+import { convertPrice, getCurrency } from "../utils";
 
 export default function AccessoriesDetail() {
   const { id } = useParams();
@@ -31,7 +32,7 @@ export default function AccessoriesDetail() {
       <div className="product-detail-info">
         <h1>{product.name}</h1>
         <p className="description">{product.description}</p>
-        <p className="price">{product.price}</p>
+        <p className="price">{convertPrice(product.price, i18n.language)}{getCurrency(i18n.language)}</p>
         <AddToCart product={product} />
         <Link to="/products/accessories" className="back-link">
           {t("productDetail.backToAccessories")}

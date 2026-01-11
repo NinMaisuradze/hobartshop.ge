@@ -1,7 +1,10 @@
 import { useStore } from "../contexts/StoreContext";
+import { useTranslation } from "react-i18next";
+import { convertPrice, getCurrency } from "../utils";
 
 const ProductCard = ({ product }) => {
   const { addToCart, toggleWishlist, wishlist } = useStore();
+  const { i18n } = useTranslation();
 
   const isWished = wishlist.some((p) => p.id === product.id);
 
@@ -15,7 +18,7 @@ const ProductCard = ({ product }) => {
       <h2 className="font-medium">{product.name}</h2>
       <p className="text-gray-500 text-sm">{product.desc}</p>
       <div className="flex justify-between items-center mt-3">
-        <span className="font-semibold">${product.price}</span>
+        <span className="font-semibold">{convertPrice(product.price, i18n.language)}{getCurrency(i18n.language)}</span>
         <div className="flex gap-2">
           <button
             onClick={() => toggleWishlist(product)}
