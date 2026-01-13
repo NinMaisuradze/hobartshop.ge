@@ -15,9 +15,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 9,
-    name: "ოქროს კრეშენდო",
-    description: "ოქროს მოთავილებული სანთელი ხორბლის სუნებით. ახალი წლის აღმოსავლელი და პრესტიჟული.",
-    price: 18,
+    name: "დიდი ფიფქები",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 9,
     image: HolidayCandle2,
     category: "new-year",
     categoryName_ka: "ახალი წელი",
@@ -25,9 +25,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 17,
-    name: "ღამის ღვინო",
-    description: "მუქი წითალი სანთელი ღვინისა და სპილოს ძვლის ღლიით. ღმირთის დღის ღამის იდეალური თანამშრომელი.",
-    price: 16,
+    name: "პატარა ფიფქი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 6,
     image: HolidayCandle1,
     category: "new-year",
     categoryName_ka: "ახალი წელი",
@@ -35,9 +35,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 25,
-    name: "ღია გაზაფხული",
-    description: "ღია პალიტრა სანთელი ახალი წელი აღებულად.",
-    price: 14,
+    name: "გირჩი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 10,
     image: HolidayCandle2,
     category: "new-year",
     categoryName_ka: "ახალი წელი",
@@ -45,9 +45,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 26,
-    name: "მიწის სიმღვრივე",
-    description: "მუქი მუქი სანთელი ღრმა სუნებითა.",
-    price: 15,
+    name: "ტომარა ბარაქის",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 8,
     image: HolidayCandle1,
     category: "new-year",
     categoryName_ka: "ახალი წელი",
@@ -55,9 +55,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 27,
-    name: "ღილაკი წაბლი",
-    description: "ღილაკი წაბლის სანთელი ღალი აღდგომის დღეზე.",
-    price: 13,
+    name: "ჩექმა",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 7,
     image: HolidayCandle2,
     category: "new-year",
     categoryName_ka: "ახალი წელი",
@@ -65,9 +65,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 28,
-    name: "გაბატ ფერი",
-    description: "სერემონიალური გაბატი სანთელი ახალი წელი.",
-    price: 17,
+    name: "პატარა გირჩი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 8,
     image: HolidayCandle1,
     category: "new-year",
     categoryName_ka: "ახალი წელი",
@@ -75,9 +75,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 29,
-    name: "სიცხე დღემდე",
-    description: "ცხელი ღლიანი სანთელი წლის ბოლოს ღამის გაკვსეთვლად.",
-    price: 16,
+    name: "ჯარისკაცი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 10,
     image: HolidayCandle2,
     category: "new-year",
     categoryName_ka: "ახალი წელი",
@@ -85,9 +85,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 30,
-    name: "დიდი სპილო",
-    description: "დიდი მუქი ღლია სანთელი ღრმა აღმოცენებით.",
-    price: 19,
+    name: "ჯარისკაცი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 10,
     image: HolidayCandle1,
     category: "new-year",
     categoryName_ka: "ახალი წელი",
@@ -95,9 +95,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 31,
-    name: "კრეშენდო სიცხე",
-    description: "კრაშენდო სიცხე სანთელი შავი თეთრი მიქსი.",
-    price: 14,
+    name: "ხელთათმანი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 7,
     image: HolidayCandle2,
     category: "new-year",
     categoryName_ka: "ახალი წელი",
@@ -105,9 +105,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 32,
-    name: "დასაკიდი ღია",
-    description: "დასაკიდი ღია სანთელი დალიმ აკვამარინი.",
-    price: 15,
+    name: "ჯანჯაფილის კაცუნა",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 6,
     image: HolidayCandle1,
     category: "new-year",
     categoryName_ka: "ახალი წელი",
@@ -115,20 +115,212 @@ export const holidayCandleProducts = [
   },
   {
     id: 33,
-    name: "მეთოდე წაბლი",
-    description: "მეთოდე წაბლი სანთელი წელი ღამით.",
-    price: 16,
+    name: "თოვლის პაპა",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 10,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+  {
+    id: 34,
+    name: "გირჩი ნაძვი ",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 10,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+  {
+    id: 35,
+    name: "Merry Christmas ",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 12,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+  {
+    id: 36,
+    name: "ანგელოზი ",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 13,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+
+   {
+    id: 37,
+    name: "ბუნჩულა ბაბუ ",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 11,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+
+   {
+    id: 38,
+    name: "ბაბუ ირმის რქებით ",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 8,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+   
+   {
+    id: 39,
+    name: "ფეხსაცმელი სახლი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 13,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+
+    {
+    id: 40,
+    name: "პატარა ნაძვი ფოთლებით",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 7,
     image: HolidayCandle2,
     category: "new-year",
     categoryName_ka: "ახალი წელი",
     categoryName_en: "New Year"
   },
   
+    {
+    id: 41,
+    name: "პატარა  სპირალის ნაძვი ",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 6,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+
+  {
+    id: 42,
+    name: "წვნიკი ნაძვი ",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 6,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+
+   {
+    id: 43,
+    name: "ზარი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 8,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+  {
+    id: 44,
+    name: "თოვლის ბაბუ სავარძლით",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 20,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+  
+    {
+    id: 45,
+    name: "ნაძვი ვარსკვლავებით",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 14,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+
+    {
+    id: 46,
+    name: "ნაძვი ფოთლებით დიდი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 15,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+
+       {
+    id: 47,
+    name: "ნაძვი გირჩებით",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 22,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+ 
+    {
+    id: 48,
+    name: "ნაძვი პაპის სახით",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 18,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+
+    {
+    id: 49,
+    name: "ნაძვი ქოთნით",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 22,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+
+     {
+    id: 50,
+    name: "დიდი სპირალი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 12,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
+    {
+    id: 51,
+    name: "დოლარების ნაძვი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 10,
+    image: HolidayCandle2,
+    category: "new-year",
+    categoryName_ka: "ახალი წელი",
+    categoryName_en: "New Year"
+  },
   // სიყვარულის დღე
   {
     id: 2,
     name: "დიდი ფიფქები",
-    description: "წითელი სანთელი სიმბოლიზირებს სიყვარულს და სითბოს, შესანიშნავია სადღესასწაულო მაგიდის მოსახდენად.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 15,
     image: HolidayCandle2,
     category: "valentines",
@@ -138,7 +330,7 @@ export const holidayCandleProducts = [
   {
     id: 10,
     name: "ვარდების ღილაკი",
-    description: "ღია ვარდის რომის სუნება. სიყვარულის დღის იდეალური სეტი წყვილებისთვის.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 17,
     image: HolidayCandle1,
     category: "valentines",
@@ -148,7 +340,7 @@ export const holidayCandleProducts = [
   {
     id: 18,
     name: "მუქი ჩოკოლადი",
-    description: "ლამაზი მუქი ჩოკოლადის სუნება საოცნებო ღლიებით.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 14,
     image: HolidayCandle2,
     category: "valentines",
@@ -158,7 +350,7 @@ export const holidayCandleProducts = [
   {
     id: 36,
     name: "წითელი სიტყვა",
-    description: "წითელი სანთელი სიყვარულის სიმბოლით.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 16,
     image: HolidayCandle1,
     category: "valentines",
@@ -168,7 +360,7 @@ export const holidayCandleProducts = [
   {
     id: 37,
     name: "მიჩხოვანი სიყვარული",
-    description: "მაგენტა სიყვარულის სანთელი რომანტიკული საღამოსთვის.",
+    description:"ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 18,
     image: HolidayCandle2,
     category: "valentines",
@@ -178,7 +370,7 @@ export const holidayCandleProducts = [
   {
     id: 38,
     name: "გული ღრმა",
-    description: "ღრმა გულის სანთელი სიყვარულის თემატიკით.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 15,
     image: HolidayCandle1,
     category: "valentines",
@@ -188,7 +380,7 @@ export const holidayCandleProducts = [
   {
     id: 39,
     name: "კიდევ საშინელი",
-    description: "ღია კიდევ საშინელი სანთელი სიყვარულის დღის საღამოსთვის.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 14,
     image: HolidayCandle2,
     category: "valentines",
@@ -198,7 +390,7 @@ export const holidayCandleProducts = [
   {
     id: 40,
     name: "მუქი მეწამული",
-    description: "მუქი წითალი სანთელი მეწამული გუნებით.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 16,
     image: HolidayCandle1,
     category: "valentines",
@@ -208,7 +400,7 @@ export const holidayCandleProducts = [
   {
     id: 41,
     name: "ღი გამოგებული",
-    description: "ღი გამოგებული სანთელი სიყვარულის დღის საღამოსთვის.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 17,
     image: HolidayCandle2,
     category: "valentines",
@@ -218,7 +410,7 @@ export const holidayCandleProducts = [
   {
     id: 42,
     name: "სიყვარულის კვამლი",
-    description: "კვამლი სიყვარულის თემატიკით ღრმა სუნებით.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 15,
     image: HolidayCandle1,
     category: "valentines",
@@ -228,7 +420,7 @@ export const holidayCandleProducts = [
   {
     id: 43,
     name: "მიჯნობი ღი",
-    description: "მიჯნობი ღი სანთელი რომანტიკული ღამის ხელშესწვევად.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 16,
     image: HolidayCandle2,
     category: "valentines",
@@ -238,7 +430,7 @@ export const holidayCandleProducts = [
   {
     id: 44,
     name: "აღმოცენებული",
-    description: "აღმოცენებული ღი სანთელი სიყვარულის დღის დღიანობისთვის.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 14,
     image: HolidayCandle1,
     category: "valentines",
@@ -248,7 +440,7 @@ export const holidayCandleProducts = [
   {
     id: 45,
     name: "წითელი ღა",
-    description: "წითელი ღა სანთელი ღრმა ღლიებით.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 17,
     image: HolidayCandle2,
     category: "valentines",
@@ -258,7 +450,7 @@ export const holidayCandleProducts = [
   {
     id: 46,
     name: "ზღვის მოთხოვნილება",
-    description: "ზღვის მოთხოვნილება სანთელი სიყვარულის თემატიკით.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 18,
     image: HolidayCandle1,
     category: "valentines",
@@ -268,7 +460,7 @@ export const holidayCandleProducts = [
   {
     id: 47,
     name: "სიყვარულის გრძელება",
-    description: "სიყვარულის გრძელება სანთელი სიყვარულის დღის სიმბოლიზმით.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 15,
     image: HolidayCandle2,
     category: "valentines",
@@ -279,9 +471,9 @@ export const holidayCandleProducts = [
   // აღდგომა
   {
     id: 3,
-    name: "გაზაფხულის ღამი",
-    description: "ღია ვერცხლის ფერის სანთელი აღდგომის წელიწადს. შედგება ბუნებრივი სახის ყვავილებისა და თაფლის ზეთის ხორბალი.",
-    price: 14,
+    name: "ყურებიანი კვერცხი",
+    description:"ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 11,
     image: HolidayCandle1,
     category: "easter",
     categoryName_ka: "აღდგომა",
@@ -289,9 +481,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 11,
-    name: "პასხალის კვერცხი",
-    description: "მრავალფერი სანთელი კვერცხის ფორმით. აღდგომის სიმბოლური საჩუქარი.",
-    price: 16,
+    name: "კურდღელი გულით",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 10,
     image: HolidayCandle2,
     category: "easter",
     categoryName_ka: "აღდგომა",
@@ -299,9 +491,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 19,
-    name: "გაზაფხულის ღამის დღე",
-    description: "ღია მწვანე სანთელი თოვლის ღლიით.",
-    price: 13,
+    name: "ყვავილების კვერცხი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 11,
     image: HolidayCandle1,
     category: "easter",
     categoryName_ka: "აღდგომა",
@@ -309,9 +501,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 34,
-    name: "აღდგომის ღამი",
-    description: "მუქი მწვანე სანთელი აღდგომის ღამის თემატიკით.",
-    price: 15,
+    name: "ცილინდრი კურდღელით",
+    description:"ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 22,
     image: HolidayCandle2,
     category: "easter",
     categoryName_ka: "აღდგომა",
@@ -319,9 +511,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 35,
-    name: "აღდგომის დღე",
-    description: "ღია ღვინის სანთელი აღდგომის დღის აღსახაზებლად.",
-    price: 14,
+    name: "მხატვარი კურდღელი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 10,
     image: HolidayCandle1,
     category: "easter",
     categoryName_ka: "აღდგომა",
@@ -331,9 +523,9 @@ export const holidayCandleProducts = [
   // შობა
   {
     id: 4,
-    name: "შობის ღამი",
-    description: "წაბლის წარმოდგენით მომზადებული, წაბლით და მწვანილით. ეს სანთელი წარმოადგენს შობის სულს და სიმბოლიზირებს მოჩვენებებს.",
-    price: 16,
+    name: "ანგელოზი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 15,
     image: HolidayCandle2,
     category: "christmas",
     categoryName_ka: "შობა",
@@ -341,9 +533,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 12,
-    name: "კრემლის სამეფო",
-    description: "ოქროს ერთხელი დასელი სანთელი, რომელიც გაგთავამ კრემის ღლია.",
-    price: 18,
+     name: "Merry Christmas ",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 12,
     image: HolidayCandle1,
     category: "christmas",
     categoryName_ka: "შობა",
@@ -351,9 +543,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 20,
-    name: "თოვლის ღამ",
-    description: "თეთრი სანთელი ნიჭის ღლიით, იდეალურია ღამის დღე.",
-    price: 15,
+    name: "ზარი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 8,
     image: HolidayCandle2,
     category: "christmas",
     categoryName_ka: "შობა",
@@ -364,7 +556,7 @@ export const holidayCandleProducts = [
   {
     id: 5,
     name: "ჰელოვინის სრცა",
-    description: "მუქი ნარინჯისფერი სანთელი შიშის დღის თემატიკით. გაკეთებული ღრმა, მისტიკური სუნებით.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 13,
     image: HolidayCandle1,
     category: "halloween",
@@ -374,7 +566,7 @@ export const holidayCandleProducts = [
   {
     id: 13,
     name: "მოჩვენების ღამი",
-    description: "შავი სანთელი, რომელიც აზღვრის გარკვევა და მიხაკ მოჩვენებებს.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 14,
     image: HolidayCandle2,
     category: "halloween",
@@ -384,7 +576,7 @@ export const holidayCandleProducts = [
   {
     id: 21,
     name: "ჯადოსნური მიქსი",
-    description: "მრავალფერი სანთელი ჯადოსნური სუნებითა.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 15,
     image: HolidayCandle1,
     category: "halloween",
@@ -395,9 +587,9 @@ export const holidayCandleProducts = [
   // დედის დღე
   {
     id: 6,
-    name: "დედის დღე",
-    description: "ოქროსფერი სანთელი უსაფრთხო ღლი და ღია ყვავილებით. დედის დღის იდეალური საჩუქარი.",
-    price: 15,
+    name: "ბავშვი ხელზე",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 12,
     image: HolidayCandle2,
     category: "mothers-day",
     categoryName_ka: "დედის დღე",
@@ -405,9 +597,9 @@ export const holidayCandleProducts = [
   },
   {
     id: 14,
-    name: "ღვინის ღვიძე",
-    description: "ღლიანი წაბლის სანთელი დედის დღის გაფრთხოებული თემატიკით.",
-    price: 16,
+    name: "ორსული ქალი",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
+    price: 10,
     image: HolidayCandle1,
     category: "mothers-day",
     categoryName_ka: "დედის დღე",
@@ -416,7 +608,7 @@ export const holidayCandleProducts = [
   {
     id: 22,
     name: "გულის თბილება",
-    description: "ღია ვარდის სანთელი დედისთვის.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 14,
     image: HolidayCandle2,
     category: "mothers-day",
@@ -428,7 +620,7 @@ export const holidayCandleProducts = [
   {
     id: 8,
     name: "ნოველა",
-    description: "მულტიკოლორი სანთელი კვადრატული ფორმის, სხვადსხვა უსაფრთხო ღლიების კომბინაცია.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 18,
     image: HolidayCandle2,
     category: "birthday",
@@ -438,7 +630,7 @@ export const holidayCandleProducts = [
   {
     id: 16,
     name: "კვარცული ცხელი",
-    description: "მრავალფერი სანთელი დაბადების დღის კვარცულ თემატიკით.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 17,
     image: HolidayCandle1,
     category: "birthday",
@@ -448,7 +640,7 @@ export const holidayCandleProducts = [
   {
     id: 24,
     name: "სახელმწიფო პომპა",
-    description: "რეინბოუ ფერი სანთელი იუბილეის დღის უწერტილო ღვინე.",
+    description: "ეს სანთელი მზადებულია 100% სოიოს ცვლით, სუნამოებით და ხელნაკეთი დეკორაციებით. იდეალურია საჩუქრად ან ინტერიერის მოსახდენად.",
     price: 16,
     image: HolidayCandle2,
     category: "birthday",
