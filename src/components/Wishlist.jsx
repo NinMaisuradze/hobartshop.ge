@@ -1,9 +1,9 @@
 import { useStore } from "../contexts/StoreContext";
 
 export default function Wishlist() {
-  const { wishlistItems } = useStore();
+  const { wishlist } = useStore();
 
-  const items = wishlistItems.length ? wishlistItems : [
+  const items = wishlist && wishlist.length ? wishlist : [
     { id: 1, name: "Luxury Candle" },
     { id: 2, name: "Decorative Candle" }
   ];
@@ -13,7 +13,7 @@ export default function Wishlist() {
       <h1>სურვილების სია</h1>
       <ul>
         {items.map(item => (
-          <li key={item.id}>{item.name}</li>
+          <li key={item.id}>{item.name || item.title || item.name_en || item.name_ka}</li>
         ))}
       </ul>
     </div>
