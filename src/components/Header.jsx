@@ -143,7 +143,10 @@ export default function Header() {
       <nav className="primary-nav" role="navigation" aria-label="Main navigation" style={{ marginTop: "10px" }}>
         <ul className="nav-list" style={{ display: "flex", gap: "25px", fontSize: "18px", fontWeight: 500 }}>
           <li><Link to="/">{t("header.home")}</Link></li>
-          
+
+          {/* ახალი გვერდი - ყალიბები */}
+          <li><Link to="/molds">{t("Molds")}</Link></li>
+
           {/* New Product Dropdown */}
           <li className="has-submenu" ref={productBtnRef} style={{ position: "relative" }}>
             <button className="submenu-toggle" aria-haspopup="true" aria-expanded={shopOpen} onClick={(e) => { e.stopPropagation(); setShopOpen((prev) => !prev); setDecorationOpen(false); }} style={{ background: "none", border: "none", cursor: "pointer", fontSize: "18px", fontWeight: 500 }}>
@@ -165,8 +168,7 @@ export default function Header() {
                 <li><Link to="/products/epoxy-decor">{t("EpoxyDecor")}</Link></li>
                 <li><Link to="/products/accessories">{t("Accessories")}</Link></li>
                 <li><Link to="/products/plaster-decor">{t("PlasterDecor")}</Link></li>
-               <li><Link to="/products/felt-toys">{t("FeltToys")}</Link></li>
-
+                <li><Link to="/products/felt-toys">{t("FeltToys")}</Link></li>
               </ul>
             )}
           </li>

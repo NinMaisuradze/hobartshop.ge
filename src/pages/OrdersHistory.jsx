@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "./OrdersHistory.css";
 
 export default function OrdersHistory() {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const lang = i18n.language;
   const [orders, setOrders] = useState([]);
 
@@ -50,16 +50,38 @@ export default function OrdersHistory() {
                   {order.date}
                 </p>
               </div>
+
               <div className="order-status">
                 <span className={`status-badge status-${order.status}`}>
                   {order.status === "pending"
                     ? lang === "ka"
-                      ? "მოწმენდილი"
+                      ? "მიმდინარე"
                       : "Pending"
                     : lang === "ka"
                     ? "დასრულებული"
                     : "Completed"}
                 </span>
+
+                {/* Cancel Button */}
+                {order.status === "pending" && (
+                  <button
+                    className="cancel-order-btn"
+                    onClick={() => {
+                      const updatedOrders = orders.filter(
+                        (o) => o.id !== order.id
+                      );
+                      setOrders(updatedOrders);
+                      localStorage.setItem(
+                        "orders",
+                        JSON.stringify(updatedOrders)
+                      );
+                    }}
+                  >
+                    {lang === "ka"
+                      ? "შეკვეთის გაუქმება"
+                      : "Cancel Order"}
+                  </button>
+                )}
               </div>
             </div>
 
@@ -79,8 +101,14 @@ export default function OrdersHistory() {
                     <tr key={item.id}>
                       <td>{item.name || item.title}</td>
                       <td>{item.qty}</td>
-                      <td>{convertPrice(item.price, i18n.language)}{getCurrency(i18n.language)}</td>
-                      <td className="item-total">{convertPrice(item.price * item.qty, i18n.language)}{getCurrency(i18n.language)}</td>
+                      <td>
+                        {convertPrice(item.price, lang)}
+                        {getCurrency(lang)}
+                      </td>
+                      <td className="item-total">
+                        {convertPrice(item.price * item.qty, lang)}
+                        {getCurrency(lang)}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -95,7 +123,9 @@ export default function OrdersHistory() {
                 </p>
                 <p>{order.customer.email}</p>
                 <p>{order.customer.phone}</p>
-                <p>{order.customer.address}, {order.customer.city}</p>
+                <p>
+                  {order.customer.address}, {order.customer.city}
+                </p>
               </div>
 
               <div className="payment-info">
@@ -118,7 +148,10 @@ export default function OrdersHistory() {
 
               <div className="order-total-section">
                 <h4>{lang === "ka" ? "სულ:" : "Total:"}</h4>
-                <p className="total-amount">{convertPrice(order.total, i18n.language)}{getCurrency(i18n.language)}</p>
+                <p className="total-amount">
+                  {convertPrice(order.total, lang)}
+                  {getCurrency(lang)}
+                </p>
               </div>
             </div>
           </div>
@@ -127,7 +160,9 @@ export default function OrdersHistory() {
 
       <div className="orders-footer">
         <Link to="/" className="back-to-shop">
-          {lang === "ka" ? "მაღაზიაში დაბრუნება" : "Continue Shopping"}
+          {lang === "ka"
+            ? "მაღაზიაში დაბრუნება"
+            : "Continue Shopping"}
         </Link>
       </div>
     </div>

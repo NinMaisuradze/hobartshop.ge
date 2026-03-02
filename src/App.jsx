@@ -30,8 +30,7 @@ import PlasterDecor from "./pages/PlasterDecor";
 import PlasterDecorDetail from "./pages/PlasterDecorDetail";
 import FeltToys from "./pages/FeltToys";
 import FeltToysDetails from "./pages/FeltToysDetails";
-
-
+import MoldsPage from "./pages/MoldsPage";
 
 function InnerApp() {
   const currentLang = "ka";
@@ -64,12 +63,12 @@ function InnerApp() {
         <Route path="/products/plaster-decor" element={<PlasterDecor />} />
         <Route path="/products/plaster-decor/:id" element={<PlasterDecorDetail />} />
         
-       {/* თექის სათამაშოები */}
- <Route path="/products/felt-toys" element={<FeltToys />} />
-<Route path="/products/felt-toys/:id" element={<FeltToysDetails />} />
-
-
-
+        {/* თექის სათამაშოები */}
+        <Route path="/products/felt-toys" element={<FeltToys />} />
+        <Route path="/products/felt-toys/:id" element={<FeltToysDetails />} />
+          
+        {/* ყალიბები */}
+        <Route path="/molds" element={<MoldsPage />} />
 
         {/* ბლოგი */}
         <Route path="/blog" element={<BlogList />} />
